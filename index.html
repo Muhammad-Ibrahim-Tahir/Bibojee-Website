@@ -9,62 +9,83 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #ffffff;
       color: #111;
     }
 
     header {
+      position: sticky;
+      top: 0;
       background: #111;
       color: white;
       padding: 16px;
-      text-align: center;
-      font-size: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header span {
       font-weight: bold;
     }
 
-    section {
-      padding: 40px 20px;
-    }
-
     .hero {
+      padding: 60px 20px;
       text-align: center;
+      background: linear-gradient(to bottom, #f5f5f5, #ffffff);
     }
 
     .hero h1 {
-      font-size: 28px;
+      font-size: 30px;
+      margin-bottom: 10px;
     }
 
     .hero p {
       color: #555;
+      max-width: 500px;
+      margin: auto;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 16px;
-      padding: 12px 20px;
+      margin-top: 20px;
+      padding: 14px 24px;
       background: #111;
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
     }
 
-    .services {
-      background: #f5f5f5;
+    section {
+      padding: 50px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
     }
 
     .card {
-      background: white;
-      padding: 16px;
-      margin: 12px 0;
-      border-radius: 8px;
+      padding: 20px;
       border: 1px solid #ddd;
+      border-radius: 10px;
+      background: white;
+    }
+
+    .about {
+      background: #f9f9f9;
+      text-align: center;
     }
 
     footer {
-      text-align: center;
-      padding: 20px;
       background: #111;
       color: white;
+      text-align: center;
+      padding: 20px;
     }
   </style>
 </head>
@@ -72,38 +93,40 @@
 <body>
 
 <header>
-  Bibojee Group
+  <span>Bibojee Group</span>
+  <span>Menu</span>
 </header>
 
 <section class="hero">
-  <h1>Building Industrial Excellence</h1>
-  <p>Delivering manufacturing, infrastructure, and engineering solutions.</p>
+  <h1>Industrial Excellence Across Sectors</h1>
+  <p>
+    Delivering manufacturing, infrastructure, and engineering solutions with precision and scale.
+  </p>
   <a href="#" class="btn">Contact Us</a>
 </section>
 
-<section class="services">
+<section>
   <h2>Our Services</h2>
-
-  <div class="card">
-    <h3>Manufacturing</h3>
-    <p>High-quality industrial manufacturing solutions.</p>
-  </div>
-
-  <div class="card">
-    <h3>Infrastructure</h3>
-    <p>Large-scale infrastructure development projects.</p>
-  </div>
-
-  <div class="card">
-    <h3>Engineering</h3>
-    <p>Advanced engineering and technical services.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Manufacturing</h3>
+      <p>Precision-engineered industrial production.</p>
+    </div>
+    <div class="card">
+      <h3>Infrastructure</h3>
+      <p>Large-scale development and construction.</p>
+    </div>
+    <div class="card">
+      <h3>Engineering</h3>
+      <p>Advanced technical and mechanical solutions.</p>
+    </div>
   </div>
 </section>
 
-<section>
+<section class="about">
   <h2>About Us</h2>
   <p>
-    Bibojee Group is a diversified industrial company delivering value across multiple sectors.
+    Bibojee Group is a diversified industrial company delivering value across multiple sectors through innovation and expertise.
   </p>
 </section>
 
@@ -112,4 +135,4 @@
 </footer>
 
 </body>
-  </html>
+</html>
